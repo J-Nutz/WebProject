@@ -1,0 +1,68 @@
+/*
+
+  htmlElement{
+    appliesTo: htmlElement;
+  }
+
+  #someName{
+    appliesTo: ID;
+  }
+
+  .someName{
+    appliesTo: class;
+  }
+
+  element.someName{
+    appliesTo: elementWithClass;
+}
+
+  element, element1, element2 {
+    appliesTo: listedElements;
+}
+
+*/
+
+ul {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+a {
+    float: none;
+    width: 6em;
+    text-decoration: none;
+    color: white;
+    background-color: #0066FF;
+    padding: 0.2em 0.6em;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+a:hover {
+  background-color: #8D8D86;
+  color: black;
+}
+
+li {
+  display: inline;
+  font-size: 18px;
+}
+
+#mHeader {
+  color: white;
+  text-shadow: 2px 2px rgb(37, 37, 25);
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 25px;
+  display: block;
+}
+
+body {
+  /* background-color: #8D8D86; */
+  background-color: rgb(0, 100, 200);
+}
+
+p {
+  text-align: center;
+}
