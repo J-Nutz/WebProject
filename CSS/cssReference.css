@@ -1,0 +1,118 @@
+/* References for css styling */
+
+  /* SELECTORS */
+  htmlElement{
+    appliesTo: htmlElement;
+  }
+
+  #someName{
+    appliesTo: ID;
+  }
+
+  .someName{
+    appliesTo: class;
+  }
+
+  element.someName{
+    appliesTo: elementWithClass;
+  }
+
+  element, element1, element2 {
+    appliesTo: listedElements;
+  }
+
+  /* BACKGROUND */
+
+  body {
+    background-color: blue;
+    background-image: url("c://path//to//image.png");
+    background-repeat: repeat-y; /* Vertical */
+                       repeat-x; /* Horizontal */
+                       no-repeat; /* Who Knows? */
+                       repeat; /* Again, Who knows? */
+
+    background-position: (x, y), left, center, right, bottom, top, top right, bottom left, etc.;
+    background-attachment: fixed; (Image doesn't move when user scrolls), scroll; (Image does move with scroll)
+  }
+
+  /* BORDERS */
+
+  p {
+    border-style: dashed; dotted; solid; double; groove; ridge; inset; outset; none; or combo, (top, right, bottom, left);
+    border-width: medium; thin; thick; 5px; combo (top, right, bottom, left);
+    border-color: red, green, blue, rgb(0, 0, 0), #0FF00F0, combo = (top, right, bottom, left);
+  }
+
+  /* MARGINS */
+  /* Space around the element */
+
+  p {
+    margin-left, right, bottom, top: 100px;
+    margin: 100px 50px 100px 50px (top, right, bottom, left);
+    margin: auto; (Horizontally centers element)
+  }
+
+  /* PADDING */
+  /* White space between content and border */
+
+  p {
+    padding-top, right, bottom, left: 50px, 5%;
+    padding: 20px 1% 5% 200px (top, right, bottom, left);
+  }
+
+  /* WIDTH & HEIGHT */
+
+  p {
+    max-width: 600px;
+    width: 500px;
+    min-width: 400px;
+
+    max-height: 300px;
+    height: 250px;
+    min-height: 200px;
+  }
+
+  /* TEXT */
+
+  p {
+    color: blue; /* Text Color */
+    text-align: center, left, right, justify (equal width, straight margins);
+    text-decoration: line-through, overline, underline, none (Can Remove Line Under Links);
+    text-transform: lowercase, uppercase, capitalize (Caps first letter of each word);
+    text-indent: 25px; (Indents first line)
+    text-shadow: 3px 3px 2px blue; (horizontal shadow, vertical shadow, blur radius, color)
+    letter-spacing: 2px; (Space between chars)
+    line-height: normal, 0.5, 1.3, etc.;
+    direction: ltr, rtl; (Left to right, right to left)
+    word-spacing: normal, 5px; (Space between words)
+  }
+
+  /* FONTS */
+
+  p {
+    font-family: "Times New Roman", cursive, serif; (Tries each font until succesful)
+    font-style: italic, normal, oblique (Close to italic but less supported);
+    font-size: 32px, 2em (32px / 16 = 2em);
+    font-weight: bold, bolder, lighter, normal, 100 - 900;
+    font-variant: normal, small-caps
+  }
+
+  /* LINKS */
+
+  a:link = normal-unvisited, :visited = idk, :hover = idk, :active = moment clicked {
+    color: rgb(255, 4, 99);
+  }
+
+  /* Link as button example */
+  a:link, a:visited {
+    background-color: #f44336;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  a:hover, a:active {
+      background-color: red;
+  }
+  /* End Example */
