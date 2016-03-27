@@ -116,3 +116,89 @@
       background-color: red;
   }
   /* End Example */
+
+  /* LISTS */
+
+  Unorder Lists <ul>
+    - Listed with bullets
+
+  Ordered Lists <ol>
+    - Listed with numbers or letters
+
+  ul, ol {
+    list-style-type: armenian, circle, decimal, etc.;
+    list-style-image: url(C:\\path\\to\\image.png);
+    list-style-position: inside, outside;
+    list-style: armenian, inside, url(C:\\path\\to\\image.png);
+  }
+
+  ul, ol, li {
+    background: #ff9999;
+    padding: 15px;
+    margin: 10px;
+  }
+
+  /* LISTS */
+
+  /* TABLES */
+
+  Responsive Table:
+    <div style="overflow-x:auto;">
+      <table>
+      </table>
+    </div>
+
+  table {
+    border-collapse: collapse, separate;
+    width: 100%;
+  }
+
+  th {
+    height: 100%;
+    text-align: center, left, justify, right;
+    background-color: #4CAF50;
+    color: white;
+  }
+
+  td {
+    height: 50px;
+    vertical-align: baseline, bottom, middle, top;
+  }
+
+  tr:hover {
+    background-color: #f5f5f5;
+  }
+
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+
+  th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd; /* Horizontal Dividers */
+  }
+
+  table, th, td {
+    border: 1px solid black;
+    height: 100%;
+  }
+
+  /* CSS BOX MODEL */
+
+  div {
+    width: 300px;
+    padding: 25px;
+    border: 25px solid navy;
+    margin: 25px;
+  }
+
+  /* CSS OUTLINES */
+
+  p {
+    border: 1px solid black;
+    outline-color: red;
+    outline-style: dashed, dotted;
+    outline-color: red;
+    outline-width: medium, thin, thick, 5px;
+  }
